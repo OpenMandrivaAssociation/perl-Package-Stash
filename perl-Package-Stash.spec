@@ -13,6 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/Package/%{upstream_name}-%{ups
 
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Test::Exception)
+BuildRequires: perl(Test::Fatal)
 BuildRequires: perl(Test::More)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
