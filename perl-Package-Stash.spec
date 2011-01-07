@@ -1,5 +1,5 @@
 %define upstream_name    Package-Stash
-%define upstream_version 0.13
+%define upstream_version 0.22
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -15,6 +15,7 @@ BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::Fatal)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(Dist::CheckConflicts)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -49,6 +50,7 @@ rm -rf %buildroot
 %defattr(-,root,root)
 %doc Changes META.yml LICENSE README META.json
 %{_mandir}/man3/*
-%perl_vendorlib/*
+%{perl_vendorlib}/Package
+%{_bindir}/package-stash-conflicts
 
 
