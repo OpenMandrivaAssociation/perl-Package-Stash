@@ -15,6 +15,7 @@ BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::Fatal)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(Test::Requires)
 BuildRequires: perl(Dist::CheckConflicts)
 BuildRequires: perl(Package::DeprecationManager)
 BuildArch: noarch
