@@ -16,6 +16,7 @@ BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::Fatal)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Dist::CheckConflicts)
+BuildRequires: perl(Package::DeprecationManager)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
