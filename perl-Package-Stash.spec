@@ -1,9 +1,9 @@
 %define upstream_name    Package-Stash
-%define upstream_version 0.29
+%define upstream_version 0.33
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    1
 
 Summary:    Routines for manipulating stashes
 License:    GPL+ or Artistic
@@ -19,7 +19,6 @@ BuildRequires: perl(Test::Requires)
 BuildRequires: perl(Dist::CheckConflicts)
 BuildRequires: perl(Package::DeprecationManager)
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Manipulating stashes (Perl's symbol tables) is occasionally necessary, but
