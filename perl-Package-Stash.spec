@@ -1,4 +1,4 @@
-%define upstream_name    Package-Stash
+%define upstream_name Package-Stash
 %define upstream_version 0.34
 
 %if %{_use_internal_dependency_generator}
@@ -9,7 +9,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Release:	2
 
 Summary:	Routines for manipulating stashes
 License:	GPL+ or Artistic
