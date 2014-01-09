@@ -1,5 +1,5 @@
 %define modname	Package-Stash
-%define modver	0.34
+%define modver 0.35
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Package::Stash::Conflicts\\)'
@@ -10,11 +10,11 @@
 Summary:	Routines for manipulating stashes
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	7
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Package/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Package/Package-Stash-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Module::Implementation)
 BuildRequires:	perl(Package::Stash::XS)
@@ -54,4 +54,6 @@ IO slot.
 %{_bindir}/package-stash-conflicts
 %{perl_vendorlib}/Package
 %{_mandir}/man3/*
+%{_mandir}/man1/package-stash-conflicts.1.xz
+
 

@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   Package-Stash-0.34.tar.gz: 61c8e7de40d1129fe9c319fffb65d1eb66fc66f1
+sources:
+  Package-Stash-0.35.tar.gz: e0eace55f53ee492eee6b9226b0e64acc9879005
