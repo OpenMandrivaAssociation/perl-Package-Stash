@@ -1,5 +1,5 @@
 %define modname	Package-Stash
-%define modver 0.35
+%define modver 0.36
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Package::Stash::Conflicts\\)'
@@ -55,5 +55,6 @@ IO slot.
 %{perl_vendorlib}/Package
 %{_mandir}/man3/*
 %{_mandir}/man1/package-stash-conflicts.1.xz
+
 
 
