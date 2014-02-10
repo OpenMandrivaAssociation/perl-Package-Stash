@@ -55,6 +55,7 @@ IO slot.
 %{perl_vendorlib}/Package
 %{_mandir}/man3/*
 %{_mandir}/man1/package-stash-conflicts.1.xz
+%{_mandir}/man1/package-stash-conflicts.1
 
 
 
