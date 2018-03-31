@@ -1,16 +1,10 @@
 %define modname	Package-Stash
 %define modver 0.37
 
-%if %{_use_internal_dependency_generator}
-%define __noautoreq 'perl\\(Package::Stash::Conflicts\\)'
-%else
-%define _requires_exceptions perl(Package::Stash::Conflicts)
-%endif
-
 Summary:	Routines for manipulating stashes
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	6
+Release:	7
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -25,6 +19,8 @@ BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::Requires)
 BuildRequires:	perl(Dist::CheckConflicts)
 BuildRequires:	perl(Package::DeprecationManager)
+# Not found by rpm auto-provides
+Provides:	perl(Package::Stash::Conflicts) = %{version}
 BuildRequires:	perl-devel
 
 %description
