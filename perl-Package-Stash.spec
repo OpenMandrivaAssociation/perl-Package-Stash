@@ -18,7 +18,6 @@ BuildRequires:	perl(Test::Fatal)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::Requires)
 BuildRequires:	perl(Dist::CheckConflicts)
-BuildRequires:	perl(Package::DeprecationManager)
 # Not found by rpm auto-provides
 Provides:	perl(Package::Stash::Conflicts) = %{version}
 BuildRequires:	perl-devel
