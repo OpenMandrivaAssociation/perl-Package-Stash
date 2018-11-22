@@ -4,10 +4,10 @@
 Summary:	Routines for manipulating stashes
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	8
+Release:	9
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/pod/Package::Stash
 Source0:	http://www.cpan.org/modules/by-module/Package/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Module::Implementation)
