@@ -1,10 +1,10 @@
 %define modname	Package-Stash
-%define modver 0.37
+%define modver 0.39
 
 Summary:	Routines for manipulating stashes
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	9
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Package::Stash
