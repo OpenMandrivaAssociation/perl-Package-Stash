@@ -32,21 +32,21 @@ includes a sigil. If this sigil is absent, it is assumed to represent the
 IO slot.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %check
 %make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes META.yml LICENSE README META.json
 %{_bindir}/package-stash-conflicts
 %{perl_vendorlib}/Package
-%{_mandir}/man3/*
-%{_mandir}/man1/package-stash-conflicts.1*
+%doc %{_mandir}/man3/*
+%doc %{_mandir}/man1/package-stash-conflicts.1*
