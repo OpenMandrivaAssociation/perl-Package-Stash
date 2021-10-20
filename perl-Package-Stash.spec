@@ -17,6 +17,7 @@ BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::Fatal)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::Requires)
+BuildRequires:	perl(Test::Needs)
 BuildRequires:	perl(Dist::CheckConflicts)
 # Not found by rpm auto-provides
 Provides:	perl(Package::Stash::Conflicts) = %{version}
@@ -39,7 +40,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
 %check
-%make test
+make test
 
 %install
 %make_install
