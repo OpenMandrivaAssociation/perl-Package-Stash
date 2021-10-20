@@ -47,4 +47,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_bindir}/package-stash-conflicts
 %{perl_vendorlib}/Package
 %doc %{_mandir}/man3/*
-%doc %{_mandir}/man1/package-stash-conflicts.1*
