@@ -1,5 +1,5 @@
 %define modname	Package-Stash
-%define modver 0.39
+%define modver 0.40
 
 Summary:	Routines for manipulating stashes
 Name:		perl-%{modname}
